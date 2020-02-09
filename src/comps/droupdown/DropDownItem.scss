@@ -1,0 +1,86 @@
+.DropDownItem {
+  cursor: pointer;
+  padding: 16px 24px 10px 24px;
+  background: #ffffff;
+  box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  .grid-left {
+    flex: 1;
+  }
+  .grid-right {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  .name {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+    color: #6c6c6c;
+    margin-bottom: 5px;
+  }
+  .left {
+    display: flex;
+    margin: 16px 0;
+    .block {
+      width: 8px;
+      height: 16px;
+      left: 24px;
+      top: 48px;
+      margin-right: 3px;
+      &.green {
+        background: #34c759;
+      }
+      &.red {
+        background: #ff2d55;
+      }
+    }
+    .text {
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1em;
+      width: 98px;
+      margin: 0;
+
+      /* #6C6C6C */
+
+      color: #6c6c6c;
+    }
+  }
+  .text {
+    font-family: Roboto;
+    margin: 8px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    /* #6C6C6C */
+
+    color: #6c6c6c;
+  }
+  .button {
+    cursor: pointer; 
+    width: 55px;
+    height: 40px;
+    border-radius: 100%; 
+    margin-bottom: 5px; 
+    margin-top: 18px;
+    svg{
+      pointer-events: none;
+    }
+  }
+}

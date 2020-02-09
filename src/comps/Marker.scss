@@ -1,0 +1,80 @@
+.marker {
+  .board {
+    min-width:80px; 
+    height: 60px;
+    background: white;
+    display: flex;
+    float:  left;
+    clear: left;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0 rgba(0, 122, 255, 0.4);
+    .head {
+      flex: 1;
+      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+      .text {
+          margin-left: 2px;
+          margin-right: 2px;
+        white-space: nowrap; 
+        min-width:72px; 
+        height: 24px;
+        font-family: NotoSansCJKtc;
+        font-size: 10px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        color: #6d6969;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .body {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      .row {
+        flex: 1;
+        display: flex;
+        .block {
+          width: 4px;
+          &.green {
+            background: #7ad96b;
+          }
+          &.red {
+            background: #ed4f4f;
+          }
+        }
+        .text {
+          margin-left: 5px;
+          height: 16px;
+          font-family: NotoSansCJKtc;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          color: #6d6969;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .count {
+          flex: 1;
+          text-align: center;
+          font-family: NotoSansCJKtc;
+          font-weight: 900;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 2.2px;
+          color: #636366;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.current{
+    position: fixed;
+    cursor: pointer;
+    z-index: 1000;
+    width: 30px;
+    height: 30px; 
+    bottom: 10px;
+    left: 50%;  
+    &.disabled{
+        cursor: unset;
+        background: lightgrey; 
+    }
+}

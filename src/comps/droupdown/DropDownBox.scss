@@ -1,0 +1,84 @@
+.DropDownBox {
+  background: white;
+  position: fixed;
+  bottom: 0;
+  border-radius: 3px;
+  width: 100%;
+  max-width: 350px;
+  height: 45px;
+  &.selected {
+    height: 185px;
+  }
+  &.open {
+    height: 100%;
+  }
+  transition: height 0.3s ease;
+  z-index: 1000;
+  .toggle {
+    cursor: pointer;
+    width: 30px;
+    height: 30px; 
+    margin-left: 3px;
+    transition: transform 0.3s ease;
+    margin-top: 3px;
+    &.open { 
+      margin-top: 0px;
+      transform: rotate(180deg);
+    }
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 30px;
+    
+    form {
+      width: 100%;
+      input {
+        padding-left: 30px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        width: 85%;
+        border: 1px solid #c4c4c4;
+        border-radius: 5px; 
+        margin-left: 12px;
+      }
+      .face {
+        position: absolute;
+        margin: 5px;
+        margin-left: 20px;
+      }
+      .sort {
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+  .list {
+    height: 100%;
+    overflow: auto;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .spacer {
+    cursor: pointer;
+    user-select: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2em;
+    color: #6c6c6c; 
+    height: 30px;
+    margin-top: -5px;
+    box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.25);
+    div{
+      margin-left: 24px;
+    }
+  }
+}
